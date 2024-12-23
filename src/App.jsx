@@ -1,8 +1,12 @@
-import React from 'react'
+import Header from "./components/Header"
+
+
 
 const App = () => {
   return (
-    <div className='bg-red-800 font-bold'>App</div>
+  <>
+    <Header />
+  </>    
   )
 }
 
