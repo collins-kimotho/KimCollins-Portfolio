@@ -43,6 +43,26 @@ const skillItem = [
       label: 'TailwindCSS',
       desc: 'User Interface'
     },
+    {
+      imgSrc: '/images/python.svg',
+      label: 'Python',
+      desc: 'Data Analysis & Automation'
+    },
+    {
+      imgSrc: 'images/selenium.svg',
+      label: 'Selenium',
+      desc: 'Web Scraping'
+    },
+    {
+      imgSrc: 'images/vs-code.svg',
+      label: 'VS-Code',
+      desc: 'Code Editor'
+    },
+    {
+      imgSrc: 'images/ubuntu.svg',
+      label: 'Ubuntu',
+      desc: 'Operating System'
+    }
   ];
 
 const Skill = () => {
