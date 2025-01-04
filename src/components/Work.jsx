@@ -33,10 +33,10 @@ const works = [
     projectLink: 'https://github.com/collins-kimotho/KimCollins-Portfolio.git'
   },
   {
-    imgSrc: '/images/project-6.jpg',
-    title: 'vCard Personal portfolio',
-    tags: ['Web-design', 'Development'],
-    projectLink: 'https://github.com/codewithsadee/vcard-personal-portfolio'
+    imgSrc: '/images/hbnb.png',
+    title: 'AirBnb Clone',
+    tags: ['Web-design', 'Development', 'Flask', 'Python'],
+    projectLink: 'https://github.com/markdennis1287/AirBnB_clone_v3.git'
   },
 ];
 
