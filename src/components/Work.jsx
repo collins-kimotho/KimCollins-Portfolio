@@ -3,15 +3,15 @@ import ProjectCard from './ProjectCard';
 
 const works = [
   {
-    imgSrc: '/images/project-1.jpg',
-    title: 'Full stack music app',
-    tags: ['API', 'MVC', 'Development'],
-    projectLink: 'https://musify-5al0.onrender.com/'
+    imgSrc: '/images/newsapp.png',
+    title: 'DailyTimes: News App',
+    tags: ['API', 'Web-design', 'Development'],
+    projectLink: 'https://github.com/collins-kimotho/DailyTimes'
   },
   {
-    imgSrc: '/images/project-2.jpg',
-    title: 'Free stock photo app',
-    tags: ['API', 'SPA'],
+    imgSrc: '/images/financeApp.png',
+    title: 'Financial Advising Landing Page',
+    tags: ['Web-design', 'React', 'Javascript'],
     projectLink: 'https://pixstock-official.vercel.app/'
   },
   {
@@ -55,6 +55,7 @@ const Work = () => {
                 imgSrc={imgSrc}
                 title={title}
                 tags={tags}
+                projectLink={projectLink}
               
               
               />
