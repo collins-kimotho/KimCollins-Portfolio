@@ -10,16 +10,12 @@ import Hero from "./components/Hero"
 import Skill from "./components/Skill"
 import Work from "./components/Work"
 import About from "./About"
-import Blog from "./components/Blog"; //
-
-
-
+import Blog from "./components/Blog";
 
 
 const App = () => {
   return (
     <Router>
-    
     <main>
       <Routes>
         <Route path="/" element={
@@ -38,7 +34,6 @@ const App = () => {
         <Route path="/blog" element={<Blog/>} />
       </Routes>
     </main>
-   
   </Router>
   )
 }
