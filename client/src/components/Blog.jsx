@@ -53,12 +53,7 @@ const Blog = () => {
                 const thumbnailUrl = thumbnailMatch ? thumbnailMatch[1] : './images/medium.jpg';
 
                 const formattedDate = new Date(pubDate).toLocaleDateString();
-                // const categories = category.split(",")
-
                 return (
-
-                  
-
                   <div 
                     className=""
                     key={index}
@@ -102,8 +97,6 @@ const Blog = () => {
             }
           </div>
         </div>
-
-        
       </div>
       <Bfooter/>
     </div>
