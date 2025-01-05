@@ -1,6 +1,7 @@
 import React from 'react'
 import { ButtonPrimary } from './Button'
 import { list } from 'postcss';
+import { Link } from 'react-router-dom';
 
 
 
@@ -58,11 +59,19 @@ const Footer = () => {
             <h2 className="headline-1 mb-8 lg:max-w-[12ch]">
             Let&apos;s work together today!
             </h2>
-            <ButtonPrimary 
+            {/* <ButtonPrimary 
               href='mailto:collinskimotho@gmail.com'
               label='Start project'
               icon="chevron_right"
-            />
+            /> */}
+            <div>
+            <a href="/blog" className='btn btn-primary' target='_blank'>
+        Blogs I've Written
+        <span className='material-symbols-rounded'>
+              chevron_right
+        </span> 
+              </a>
+            </div>
           </div>
 
           <div className="grid grid-cols-2 gap-4 lg:pl-20">
