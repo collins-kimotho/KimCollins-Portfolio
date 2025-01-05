@@ -6,23 +6,6 @@ import { saveAs } from 'file-saver';
 
 
 const Hero = () => {
-
-    // const saveFile = () => {
-    //     fileSaver.saveAs(
-    //       process.env.PUBLIC_URL + "./Collins_Kimotho_SE_Resume.pdf",
-    //       "MyCV.pdf"
-    //     );
-    // };
-    
-    // const handleDownload = () => {
-    //     fetch('./public/Collins_Kimotho_SE_Resume.pdf') // replace with the path to your CV
-    //     .then(response => response.blob())
-    //     .then(blob => {
-    //         saveAs(blob, 'MyCV.pdf'); // replace with the desired file name
-    //     });
-    // }
-
-
   return (
     <section
         id='home'
