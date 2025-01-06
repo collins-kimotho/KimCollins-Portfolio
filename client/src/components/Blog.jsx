@@ -8,11 +8,9 @@ const Blog = () => {
   const [posts, setPosts] = useState([])
   const [loading, setLoading] = useState(true)
 
-  const apiUrl = process.env.REACT_APP_API_URL;
 
   useEffect(() => {
-    console.log("API URL:", apiUrl);  
-    fetch(`${apiUrl}/api/posts`)
+    fetch('https://kimcollins-portfolio.onrender.com/api/posts')
       .then(response => response.json())
       .then(data => {
         setPosts(data);
