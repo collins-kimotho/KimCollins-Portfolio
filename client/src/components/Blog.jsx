@@ -11,17 +11,18 @@ const Blog = () => {
   const apiUrl = process.env.REACT_APP_API_URL;
 
   useEffect(() => {
+    console.log("API URL:", apiUrl);  
     fetch(`${apiUrl}/api/posts`)
       .then(response => response.json())
       .then(data => {
-        setPosts(data)
-        setLoading(false)
+        setPosts(data);
+        setLoading(false);
       })
       .catch(error => {
-        console.log('Error fetching posts: ', error);
-        setLoading(false)
-      })
-  },[])
+        console.error("Error fetching posts:", error);
+        setLoading(false);
+      });
+  }, []);
 
     if (loading){
       return (
