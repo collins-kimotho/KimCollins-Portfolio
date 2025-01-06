@@ -5,7 +5,7 @@ const Parser = require('rss-parser');
 
 const app = express();
 app.use(cors({
-    origin: 'https://kim-collins-portfolio.vercel.app/',
+    origin: 'https://kim-collins-portfolio.vercel.app',
     methods: 'GET, POST, PUT, DELETE',
     credentials: true
 }));
