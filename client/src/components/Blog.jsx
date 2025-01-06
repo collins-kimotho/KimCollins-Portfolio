@@ -9,7 +9,7 @@ const Blog = () => {
   const [loading, setLoading] = useState(true)
 
   useEffect(() => {
-    fetch('http://127.0.0.1:3000/api/posts')
+    fetch('https://kimcollins-portfolio.onrender.com')
       .then(response => response.json())
       .then(data => {
         setPosts(data)
