@@ -66,7 +66,7 @@ const Bfooter = () => {
             /> */}
             <div>
             
-            <a href="/" className='btn btn-primary' target='_blank'>
+            <a href="/" className='btn btn-primary'>
             Back to Portfolio
             <span className='material-symbols-rounded'>
               chevron_left
