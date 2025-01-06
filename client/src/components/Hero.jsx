@@ -46,7 +46,7 @@ const Hero = () => {
                         icon='download'
                         target='_blank'
                         href='/public/Collins_Kimotho_SE_Resume.pdf'
-                        download='Collins_Kimotho_CV.pdf'
+                        download='CollinsCV.pdf'
                     />
 
                     <ButtonOutline
