@@ -8,8 +8,10 @@ const Blog = () => {
   const [posts, setPosts] = useState([])
   const [loading, setLoading] = useState(true)
 
+  const apiUrl = process.env.REACT_APP_API_URL;
+
   useEffect(() => {
-    fetch(import.meta.env.VITE_API_URL)
+    fetch(`${apiURL}/api/posts`)
       .then(response => response.json())
       .then(data => {
         setPosts(data)

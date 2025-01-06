@@ -15,7 +15,7 @@ require('dotenv').config()
 
 const parser = new Parser();
 
-const PORT = process.env.PORT || 4000;
+const PORT = process.env.PORT || 5000;
 
 app.get('/api/posts', async (req, res) => {
     try {
