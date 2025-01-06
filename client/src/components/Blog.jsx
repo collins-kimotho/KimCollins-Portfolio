@@ -9,7 +9,7 @@ const Blog = () => {
   const [loading, setLoading] = useState(true)
 
   useEffect(() => {
-    fetch('https://kimcollins-portfolio.onrender.com')
+    fetch(process.meta.env.VITE_API_URL)
       .then(response => response.json())
       .then(data => {
         setPosts(data)
