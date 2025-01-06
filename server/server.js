@@ -4,14 +4,18 @@ const Parser = require('rss-parser');
 
 
 const app = express();
-app.use(cors({
-    origin: 'https://kim-collins-portfolio.vercel.app',
+app.use(express.json());
+require('dotenv').config()
+
+const corsOptions = {
+    origin: process.env.NODE_ENV === 'production' 
+      ? 'https://kim-collins-portfolio.vercel.app' 
+      : 'http://localhost:3000',  // Local development URL
     methods: 'GET, POST, PUT, DELETE',
     credentials: true
-}));
-app.use(express.json());
-
-require('dotenv').config()
+  };
+  
+app.use(cors(corsOptions));
 
 const parser = new Parser();
 
