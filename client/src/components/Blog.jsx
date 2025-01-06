@@ -11,7 +11,7 @@ const Blog = () => {
   const apiUrl = process.env.REACT_APP_API_URL;
 
   useEffect(() => {
-    fetch(`${apiURL}/api/posts`)
+    fetch(`${apiURL}`)
       .then(response => response.json())
       .then(data => {
         setPosts(data)
