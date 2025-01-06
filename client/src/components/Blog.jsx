@@ -37,7 +37,7 @@ const Blog = () => {
       <div className="container">
         <div className='flex items-center justify-between mb-8'>
           <figure className=''>
-            <img src="./images/logo.svg" alt="" />
+            <img src="./images/logo.svg" alt=""/>
           </figure>
           <h2 className='headline-2'>
             Kim's Blog
@@ -47,7 +47,7 @@ const Blog = () => {
         <div className="">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {
-              posts.map(({ creator, title, link, pubDate, content }, index) => {
+              posts.map(({ creator, title, link, pubDate, content, category }, index) => {
                 // Extract the thumbnail URL from the content
                 const thumbnailMatch = content.match(/<img[^>]+src="([^">]+)"/);
                 const thumbnailUrl = thumbnailMatch ? thumbnailMatch[1] : './images/medium.jpg';
@@ -75,12 +75,17 @@ const Blog = () => {
                     <h3 className='title-1 mb-3'>
                       {title}
                     </h3>
+                  
                     <p className='mb-4 text-2xl text-zinc-400'>
                       by {creator}
 
                     </p>
+                    <p className="mb-8 text-zinc-500">
+                      Tags: {" "}
+                      {category && category.length > 0 ? category.join(", ") : "No Tags available"}
+                    </p>
                                     
-                    <button className='btn btn-primary'>
+                    <button className='btn btn-primary mb-4 items-center'>
                       <a
                        href={link}
                        target='_blank'
