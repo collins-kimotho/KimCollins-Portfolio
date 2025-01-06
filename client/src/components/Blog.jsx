@@ -9,7 +9,7 @@ const Blog = () => {
   const [loading, setLoading] = useState(true)
 
   useEffect(() => {
-    fetch(process.meta.env.VITE_API_URL)
+    fetch(import.meta.env.VITE_API_URL)
       .then(response => response.json())
       .then(data => {
         setPosts(data)
