@@ -1,4 +1,4 @@
-# KimCollins Portfolio
+# Collins Kimotho Portfolio
 
 This is a personal portfolio website for showcasing my skills and projects. The website is built using React, TailwindCSS, and Vite for the client-side, and Express.js for the server-side.
 
