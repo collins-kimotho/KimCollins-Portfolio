@@ -10,12 +10,14 @@ require('dotenv').config()
 const corsOptions = {
     origin: process.env.NODE_ENV === 'production' 
       ? 'https://kim-collins-portfolio.vercel.app' 
-      : 'http://localhost:3000',  // Local development URL
+      : 'http://localhost:5173',  // Local development URL
     methods: 'GET, POST, PUT, DELETE',
     credentials: true
   };
   
 app.use(cors(corsOptions));
+
+
 
 const parser = new Parser();
 
