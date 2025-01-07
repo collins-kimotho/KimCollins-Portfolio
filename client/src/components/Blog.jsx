@@ -2,6 +2,7 @@ import React from 'react'
 import Navbar from './Navbar'
 import { useEffect, useState } from 'react'
 import Bfooter from './Bfooter'
+import axios from 'axios'
 
 
 const Blog = () => {
@@ -10,17 +11,18 @@ const Blog = () => {
 
 
   useEffect(() => {
-    fetch('https://kimcollins-portfolio.onrender.com/api/posts')
-      .then(response => response.json())
-      .then(data => {
-        setPosts(data);
-        setLoading(false);
-      })
-      .catch(error => {
-        console.error("Error fetching posts:", error);
-        setLoading(false);
-      });
-  }, []);
+    const fetchPosts = async () => {
+      try {
+        const response = await axios.get('https://kimcollins-portfolio.onrender.com/api/posts')
+        setPosts(response.data)
+      } catch (error) {
+        console.error("Error fetching posts: ", error)
+      } finally {
+        setLoading(false)
+      }
+    }
+    fetchPosts()
+  }, [])
 
     if (loading){
       return (
