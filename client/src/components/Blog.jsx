@@ -2,8 +2,7 @@ import React from 'react'
 import Navbar from './Navbar'
 import { useEffect, useState } from 'react'
 import Bfooter from './Bfooter'
-import axios from 'axios'
-
+import axios from 'axios';
 
 const Blog = () => {
   const [posts, setPosts] = useState([])
