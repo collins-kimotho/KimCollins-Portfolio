@@ -4,7 +4,7 @@ import React from 'react'
 const aboutItems = [
     {
       label: 'Project done',
-      number: 25
+      number: 10
     },
     {
       label: 'Years of experience',
@@ -21,8 +21,7 @@ const About = () => {
         <div className='container'>
             <div className="bg-zinc-800/50 p-7 rounded-2xl md:p-12">
                 <p className="text-zinc-300 mb-4 md:mb-8 md:text-xl md:max-w-[60ch">
-                Welcome! I&apos;m Collins, a professional web developer with a knack for crafting visually stunning and highly functional websites. Combining creativity and technical expertise. I transform your vision into digital masterpiece that excels in both appearance and performance.
-
+                Hey there! I’m Collins, a software engineer from Nairobi, Kenya. I love solving problems with clever code and probably spends too much time arguing with semicolons. Whether I’m building sleek web apps or optimizing backend systems, I’m all about creating seamless digital experiences. Fun fact: my debugging process often involves snacks and determination.
                 </p>
                 <div className="flex flex-wrap items-center gap-4 md:gap-7">
                     {aboutItems.map(({label, number}, key) => (
