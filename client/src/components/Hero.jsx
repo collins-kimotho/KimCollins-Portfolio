@@ -45,7 +45,7 @@ const Hero = () => {
                         label='Download CV'
                         icon='download'
                         target='_blank'
-                        href='./public/Collins_Kimotho_SE_Resume.pdf'
+                        href='/Collins_Kimotho_SE_Resume.pdf'
                         download='CollinsCV.pdf'
                     />
 
