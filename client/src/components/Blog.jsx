@@ -2,6 +2,8 @@ import React from 'react'
 import Navbar from './Navbar'
 import { useEffect, useState } from 'react'
 import Bfooter from './Bfooter'
+import { Audio } from 'react-loader-spinner'
+
 import axios from 'axios';
 
 const Blog = () => {
@@ -26,7 +28,19 @@ const Blog = () => {
     if (loading){
       return (
         <div className="">
-          Loading posts...
+            <div className="container">
+              <div className="loading-spinner h-screen flex items-center justify-center">
+              <Audio
+                  height="80"
+                  width="80"
+                  radius="9"
+                  color="white"
+                  ariaLabel="loading"
+                  wrapperStyle
+                  wrapperClass
+                />
+              </div>
+            </div>
         </div>
       )
     }
