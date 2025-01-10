@@ -15,6 +15,7 @@ const Hero = () => {
         <div
             className='container items-center lg:grid lg:grid-cols-2 lg:gap-10'
         >
+            
             <div>
 
                 <div className='flex items-center gap-3'>
