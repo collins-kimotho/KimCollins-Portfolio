@@ -122,6 +122,8 @@ server/
   ]
   ```
 
+  Deployed on vercel and render
+
 ## License
 
 This project is licensed under the ISC License.
