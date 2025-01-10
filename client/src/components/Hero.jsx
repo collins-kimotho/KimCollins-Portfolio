@@ -13,7 +13,8 @@ const Hero = () => {
         className='pt-28 lg:pt-36'
     >
         <div
-            className='container items-center lg:grid lg:grid-cols-2 lg:gap-10'
+            className='
+            container items-center lg:grid lg:grid-cols-2 lg:gap-10'
         >
             
             <div>
