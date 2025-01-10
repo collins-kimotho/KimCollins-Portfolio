@@ -16,7 +16,7 @@ const works = [
   },
   {
     imgSrc: '/images/scrapping.jpg',
-    title: 'Web Scraping Projects',
+    title: 'Web Scraping',
     tags: ['Python', 'API', 'Web-scraping', 'Selenium'],
     projectLink: 'https://github.com/collins-kimotho/Scrapping-Data'
   },
