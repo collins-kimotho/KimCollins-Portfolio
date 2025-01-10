@@ -122,7 +122,7 @@ server/
   ]
   ```
 
-  Deployed on vercel and render
+ 
 
 ## License
 
