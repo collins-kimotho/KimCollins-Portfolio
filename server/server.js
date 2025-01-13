@@ -9,7 +9,7 @@ require('dotenv').config()
 
 const corsOptions = {
     origin: process.env.NODE_ENV === 'production' 
-      ? 'https://kim-collins-portfolio.vercel.app' 
+      ? 'https://kim-collins-portfolio-zeta.vercel.app' 
       : 'http://localhost:5173',  // Local development URL
     methods: 'GET, POST, PUT, DELETE',
     credentials: true
