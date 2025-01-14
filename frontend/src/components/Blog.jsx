@@ -53,7 +53,9 @@ const Blog = () => {
       <div className="container">
         <div className='flex items-center justify-between mb-8'>
           <figure className=''>
-            <img src="./images/logo.svg" alt=""/>
+          <a href='/'>
+              <img src="./images/logo.svg" alt=""/>
+            </a>
           </figure>
           <h2 className='headline-2'>
             Kim's Blog
