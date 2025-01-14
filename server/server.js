@@ -21,6 +21,7 @@ app.use(cors(corsOptions));
 
 
 const parser = new Parser();
+const cache = new NodeCache({ stdTTL: 600 }) // Cache for 10 minutes
 
 const PORT = process.env.PORT || 5000;
 
