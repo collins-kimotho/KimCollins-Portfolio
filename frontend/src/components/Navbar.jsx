@@ -54,7 +54,8 @@ const Navbar = ({ navOpen }) => {
     {
       label: 'Blog',
       link: '/blog',
-      className: 'nav-link'
+      className: 'nav-link',
+      target: '_blank'
     }
   ];
 
