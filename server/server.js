@@ -1,6 +1,7 @@
 const express = require('express');
 const cors = require('cors');
 const Parser = require('rss-parser');
+const NodeCache = require('node-cache')
 
 
 const app = express();
@@ -25,6 +26,11 @@ const PORT = process.env.PORT || 5000;
 
 app.get('/api/posts', async (req, res) => {
     try {
+        const cachedPosts = cache.get('posts');
+        if (cachedPosts) {
+            return res.json(cachedPosts)
+        } 
+
         const feed = await parser.parseURL('https://medium.com/feed/@collinskimotho');
         const articles = feed.items.map(item => ({
             creator: item.creator,
@@ -34,6 +40,8 @@ app.get('/api/posts', async (req, res) => {
             content: item['content:encoded'],
             category: item.categories || []
         }));
+
+        cache.set('posts', articles)
         res.json(articles);
     } catch (error) {
         console.error('Error fetching feed:', error);
