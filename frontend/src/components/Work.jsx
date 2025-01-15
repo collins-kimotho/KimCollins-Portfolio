@@ -3,10 +3,10 @@ import ProjectCard from './ProjectCard';
 
 const works = [
   {
-    imgSrc: '/images/newsapp.jpg',
-    title: 'DailyTimes: News App',
-    tags: ['API', 'Web-design', 'Development'],
-    projectLink: 'https://github.com/collins-kimotho/DailyTimes'
+    imgSrc: '/images/AIChef.jpg',
+    title: 'AI Chef',
+    tags: ['API', 'AI', 'Hugging Face'],
+    projectLink: 'https://github.com/collins-kimotho/Hugsy_Chef.git'
   },
   {
     imgSrc: '/images/financeApp.jpg',
