@@ -5,7 +5,7 @@ const works = [
   {
     imgSrc: '/images/AIChef.jpg',
     title: 'AI Chef',
-    tags: ['API', 'AI', 'Hugging Face'],
+    tags: ['API', 'Artificial Intelligence (AI)', 'Hugging Face', 'React'],
     projectLink: 'https://github.com/collins-kimotho/Hugsy_Chef.git'
   },
   {
@@ -15,8 +15,14 @@ const works = [
     projectLink: 'https://github.com/collins-kimotho/Finance-App'
   },
   {
-    imgSrc: '/images/scrapping.jpg',
-    title: 'Web Scraping',
+    imgSrc: './images/blackjack.jpg',
+    title: 'Blackjack',
+    tags: ['HTML', 'CSS', 'JavaScript', 'GameDevelopment'],
+    projectLink: 'https://github.com/collins-kimotho/Blackjack'
+  },
+  {
+    imgSrc: '/images/web_crawlers.png',
+    title: 'Web Scraping Projects',
     tags: ['Python', 'API', 'Web-scraping', 'Selenium'],
     projectLink: 'https://github.com/collins-kimotho/Scrapping-Data'
   },
