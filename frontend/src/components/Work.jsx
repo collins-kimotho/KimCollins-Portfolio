@@ -27,6 +27,13 @@ const works = [
     projectLink: 'https://github.com/collins-kimotho/Scrapping-Data'
   },
   {
+    imgSrc: '/images/meme.png',
+    title: 'Meme Generator App',
+    tags: ['React', 'API', 'Tailwind', 'JavaScript'],
+    projectLink: 'https://github.com/collins-kimotho/Meme-Generator'
+  },
+
+  {
     imgSrc: '/images/finsight.jpg',
     title: 'Budgeting app landing page',
     tags: ['Web-design', 'Development', 'React'],
